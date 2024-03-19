@@ -24,7 +24,8 @@ public class BasketServlet extends HttpServlet {
         if(request.getParameter("submit") != null && (Boolean.valueOf(request.getParameter("submit")))){
 
             request.getSession().setAttribute("journals", new ArrayList<>());
-        }else{
+        }
+        else{
             String journalName = request.getParameter("journalName");
             Journal journal = JournalCatalogue.getJournalCatalogue().findJournalByName(journalName);
             HttpSession session = request.getSession(true);

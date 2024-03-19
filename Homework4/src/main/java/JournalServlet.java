@@ -13,7 +13,6 @@ import java.util.List;
 
 @WebServlet("/JournalServlet")
 public class JournalServlet extends HttpServlet {
-
     private JournalCatalogue journalCatalogue = JournalCatalogue.getJournalCatalogue();
 
     @Override
